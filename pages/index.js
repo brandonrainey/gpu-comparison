@@ -34,7 +34,7 @@ export default function Home() {
         <DataGrid
           rows={value ? newGpuData : amdGpus}
           columns={columns}
-          style={{}}
+          style={{ }}
         />
       </div>
 
