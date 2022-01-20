@@ -31,15 +31,16 @@ export default function Home() {
     <div className="mainContainer">
       <Header />
       <div className="dataGridContainer">
+        <ChartSelector value={value} setValue={setValue} />
         <DataGrid
           rows={value ? newGpuData : amdGpus}
           columns={columns}
-          style={{ }}
+          style={{  }}
         />
       </div>
 
       <div className="chartContainer">
-        <ChartSelector value={value} setValue={setValue} />
+        
         <Chart value={value} setValue={setValue} />
       </div>
     </div>

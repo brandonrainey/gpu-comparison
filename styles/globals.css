@@ -121,16 +121,15 @@ input:checked + .slider:before {
 }
 
 .sliderWrapper {
-  width: 75%;
-  background: rgb(24, 23, 23);
+  width: 100%;
+  background: rgb(139, 122, 122);
   display: flex;
   justify-content: center;
-  border-top-left-radius: 15px;
-  border-top-right-radius: 15px;
+  
 }
 
 .sliderText {
-  color: white;
+  color: black;
   margin-left: 5px;
   margin-right: 5px;
   font-weight: 700;
@@ -143,7 +142,7 @@ input:checked + .slider:before {
   width: 75%;
   background:rgb(139, 122, 122);
   margin-top: 50px;
-  
+  flex-direction: column;
 }
 
 .dataGrid {
