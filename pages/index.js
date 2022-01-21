@@ -14,6 +14,11 @@ export default function Home() {
 
   const [value, setValue] = useState(true);
 
+  const myStyles = {
+    backgroundAmd: "rgb(224, 102, 102)",
+    backgroundNvidia: "rgb(136, 132, 216)",
+  };
+
   const rows = [
     { id: 1, col1: "Hello", col2: "World" },
     { id: 2, col1: "DataGridPro", col2: "is Awesome" },
@@ -35,12 +40,17 @@ export default function Home() {
         <DataGrid
           rows={value ? newGpuData : amdGpus}
           columns={columns}
-          style={{  }}
+          style={{
+            fontWeight: 600,
+            fontSize: 16,
+            background: value
+              ? myStyles.backgroundNvidia
+              : myStyles.backgroundAmd,
+          }}
         />
       </div>
 
       <div className="chartContainer">
-        
         <Chart value={value} setValue={setValue} />
       </div>
     </div>

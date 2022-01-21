@@ -4,9 +4,11 @@ import {
   Scatter,
   XAxis,
   YAxis,
+  ZAxis,
   CartesianGrid,
   Tooltip,
   ResponsiveContainer,
+  ReferenceDot,
 } from "recharts";
 import { gpuData } from "/gpu-data";
 import { newGpuData } from "../newGpuData";
@@ -57,6 +59,7 @@ export default function Chart({ value }) {
             tick={<CustomizedAxisTick />}
           />
           <YAxis type="number" dataKey="Benchmark" name="Benchmark" />
+          <ZAxis range={[100, 100]} />
           <Tooltip
             cursor={{ strokeDasharray: "3 3" }}
             payload={[{ Name: "Model" }]}

@@ -7,12 +7,12 @@ export default function ChartSelector({ value, setValue }) {
 
   return (
     <div className="sliderWrapper">
-      <p className="sliderText">AMD</p>
+      <p className={`sliderText ${value ? "disabled" : null}`}>AMD</p>
       <label className="switch">
         <input type="checkbox" checked={value} onChange={handleChange} />
         <span className="slider round"></span>
       </label>
-      <p className="sliderText">NVIDIA</p>
+      <p className={`sliderText ${value ? null : "disabled"}`}>NVIDIA</p>
     </div>
   );
 }

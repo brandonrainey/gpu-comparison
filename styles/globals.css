@@ -4,7 +4,7 @@ body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-  background: rgb(45, 45, 77);
+  background: rgb(46, 46, 63);
   height: 100%;
 }
 
@@ -36,10 +36,9 @@ a {
 }
 
 .chartComponent {
-  background:rgb(24, 23, 23);
-  border-bottom-left-radius: 15px;
-  border-bottom-right-radius: 15px;
-  
+  background: rgb(24, 23, 23);
+
+  border-radius: 15px;
 }
 
 .headerContainer {
@@ -81,8 +80,8 @@ a {
   right: 0;
   bottom: 0;
   background-color: rgb(240, 102, 102);
-  -webkit-transition: .4s;
-  transition: .4s;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
 }
 
 .slider:before {
@@ -93,16 +92,16 @@ a {
   left: 4px;
   bottom: 4px;
   background-color: white;
-  -webkit-transition: .4s;
-  transition: .4s;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
 }
 
 input:checked + .slider {
-  background-color: #2196F3;
+  background-color: #2196f3;
 }
 
 input:focus + .slider {
-  box-shadow: 0 0 1px #2196F3;
+  box-shadow: 0 0 1px #2196f3;
 }
 
 input:checked + .slider:before {
@@ -122,10 +121,11 @@ input:checked + .slider:before {
 
 .sliderWrapper {
   width: 100%;
-  background: rgb(139, 122, 122);
+  background: rgb(164, 163, 170);
   display: flex;
   justify-content: center;
-  
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
 }
 
 .sliderText {
@@ -133,6 +133,7 @@ input:checked + .slider:before {
   margin-left: 5px;
   margin-right: 5px;
   font-weight: 700;
+  font-size: 18px;
 }
 
 .dataGridContainer {
@@ -140,20 +141,28 @@ input:checked + .slider:before {
   align-self: center;
   height: 300px;
   width: 75%;
-  background:rgb(139, 122, 122);
+  background: rgb(132, 127, 160);
   margin-top: 50px;
   flex-direction: column;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
 }
 
 .dataGrid {
-  
 }
 
 .header {
   padding-left: 25px;
 }
 
+.disabled {
+  color: rgb(68, 63, 63);
+}
 
+.MuiDataGrid-columnHeaderTitle {
+  font-weight: 700 !important;
+  font-size: 18px !important;
+}
 
 @media (max-width: 1000px) {
   .chartContainer {
