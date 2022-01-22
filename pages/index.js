@@ -34,6 +34,10 @@ export default function Home() {
 
   return (
     <div className="mainContainer">
+      <Head>
+        <meta name="description" content="Website comparing recent gpu's in chart and graph form"/>
+        <title>Gpu-Comparison</title>
+      </Head>
       <Header />
       <div className="dataGridContainer">
         <ChartSelector value={value} setValue={setValue} />
