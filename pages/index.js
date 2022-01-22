@@ -3,7 +3,7 @@ import Head from "next/head";
 import Image from "next/image";
 import Chart from "../components/Chart";
 import { gpuData } from "/gpu-data";
-import { newGpuData } from "../newGpuData";
+import { newGpuData } from "../nvidiaGpuData";
 import Header from "../components/Header";
 import ChartSelector from "../components/ChartSelector";
 import { DataGrid, GridRowsProp, GridColDef } from "@mui/x-data-grid";

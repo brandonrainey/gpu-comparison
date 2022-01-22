@@ -11,7 +11,7 @@ import {
   ReferenceDot,
 } from "recharts";
 import { gpuData } from "/gpu-data";
-import { newGpuData } from "../newGpuData";
+import { newGpuData } from "../nvidiaGpuData";
 import { amdGpus } from "../amdGpuData";
 
 class CustomizedAxisTick extends PureComponent {
