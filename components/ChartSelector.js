@@ -8,7 +8,7 @@ export default function ChartSelector({ value, setValue }) {
   return (
     <div className="sliderWrapper">
       <p className={`sliderText ${value ? "disabled" : null}`}>AMD</p>
-      <label className="switch" for='selector'>
+      <label className="switch" htmlFor='selector'>
         <input type="checkbox" checked={value} onChange={handleChange} id='selector'/>
         <span className="slider round"></span>
       </label>
