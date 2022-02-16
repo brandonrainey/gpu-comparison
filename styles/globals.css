@@ -153,6 +153,9 @@ input:checked + .slider:before {
 
 .header {
   padding-left: 25px;
+  text-align: right;
+  letter-spacing: 0.5rem;
+  font-size: 40px;
 }
 
 .disabled {
