@@ -15,8 +15,8 @@ export default function Home() {
   const [value, setValue] = useState(true);
 
   const myStyles = {
-    backgroundAmd: "rgb(224, 102, 102)",
-    backgroundNvidia: "rgb(136, 132, 216)",
+    backgroundAmd: "#e76f51",
+    backgroundNvidia: "#2a9d8f",
   };
 
   const rows = [

@@ -67,7 +67,7 @@ export default function Chart({ value }) {
           <Scatter
             name="A school"
             data={value ? newGpuData : amdGpus}
-            fill={`${value ? "#8884d8" : "#e06666"}`}
+            fill={`${value ? "#2a9d8f" : "#e76f51"}`}
           />
         </ScatterChart>
       </ResponsiveContainer>
