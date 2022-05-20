@@ -10,6 +10,8 @@ import { DataGrid, GridRowsProp, GridColDef } from "@mui/x-data-grid";
 import { amdGpus } from "../amdGpuData";
 
 export default function Home() {
+
+  //vrugbh35urgb35uib3igb3huifgbiubedw
   const [nvidiaCards, setNvidiaCards] = useState([]);
 
   const [value, setValue] = useState(true);
